@@ -3,8 +3,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script src="sandbox.js" ></script> -->
+    <script src="forecast.js" defer></script>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="./clouds.css">
+    <link rel="stylesheet" href="style2,0.css">
 </head>
-<body>
+ 
+<div class="actualSun">._.</div>
+<body class="sun">
+    <div id="background-wrap">
+        <div class="x1">
+          <div class="cloud"></div>
+        </div>
+        <div class="x2">
+          <div class="cloud"></div>
+        </div>
+        <div class="x3">
+          <div class="cloud"></div>
+        </div>
+        <div class="x4">
+          <div class="cloud"></div>
+        </div>
+        <div class="x5">
+          <div class="cloud"></div>
+        </div>
+      </div>
     <h1>Vær-app</h1>
+
+
+    <audio id="bg-music" autoplay loop preload="auto" q_auto>
+    </audio>
+
+    <audio id="rain">
+      <source src="./musikk/rain-and-thunder-nature-sounds-7803.mp3" type="audio/mpeg">
+    </audio>
+    
+      
+
+    <div class="form">
+        <label for="by"></label>
+        <input type="text" id="by" class="input" placeholder="By">
+        <button id="søk" >Søk</button>
+
+        <div class="infoKonteirer">
+
+            <div class="sun"></div>
+
+            <p class="city"></p>
+            <p class="weather"></p>
+            <p class="degree"></p>
+        </div>
+
+    </div>
 </body>
-</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pew pew kamera</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="bunnNav">
+      <video id="camera-stream" autoplay loop muted>
+        <source src="" />
+      </video>
+
+      <div class="shutter-ctn">
+        <button id="shutter" class="shutter"></button>
+      </div>
+
+      <canvas id="canvas"> </canvas>
+
+      <div id="gallery-view">
+        <button id="prev">PREV</button>
+        <img data-index="0" src="" alt="current viewed image" />
+        <button id="next">NEXT</button>
+      </div>
+    </div>
+  </body>
+</html>
